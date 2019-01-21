@@ -1,0 +1,24 @@
+{
+  "name": "taroodr-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.16.4",
+    "isomorphic-unfetch": "^3.0.0",
+    "next": "^7.0.2",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-highlight": "^0.12.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "node server.js",
+    "build": "next build",
+    "static": "next export",
+    "start": "next start -p 8000",
+    "deploy": "now"
+  },
+  "author": "",
+  "license": "ISC"
+}
