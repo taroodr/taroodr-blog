@@ -8,6 +8,11 @@ const Footer = () => (
           <ul className="columns is-centered">
             <li>
               <Link href="/about">
+                <a className="column">Home</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/about">
                 <a className="column">About me</a>
               </Link>
             </li>

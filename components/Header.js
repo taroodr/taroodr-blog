@@ -19,11 +19,14 @@ export default class Header extends React.Component {
           {/* https://codepen.io/RobinTreur/pen/QKjgPX */}
           <p className="hero__description">エンジニア×バンドマンのブログ</p>
           <nav className="nav">
+            <Link href="/">
+              <a className={this.props.pathname === '/' ? 'nav__link nav__link--active' : 'nav__link'}>Home</a>
+            </Link>
             <Link href="/about">
               <a className={this.props.pathname === '/about' ? 'nav__link nav__link--active' : 'nav__link'}>About me</a>
             </Link>
-            <Link href="/">
-              <a className="nav__link">免責事項</a>
+            <Link href="/notice">
+              <a className={this.props.pathname === '/notice' ? 'nav__link nav__link--active' : 'nav__link'}>免責事項</a>
             </Link>
             <a href="https://github.com/taroodr" className="nav__link" target="_blank">Github</a>
           </nav>

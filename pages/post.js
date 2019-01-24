@@ -38,8 +38,6 @@ Post.getInitialProps = async function (context) {
   const res = await fetch(`https://api.taroodr.com/wp-json/wp/v2/posts/${id}`)
   const data = await res.json()
 
-  console.log(data)
-
   return data
 }
 

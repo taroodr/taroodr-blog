@@ -197,7 +197,6 @@ const About = (props) => (
 )
 
 About.getInitialProps = async function (context) {
-  console.log(context.pathname)
   return {
     pathname: context.pathname
   }
