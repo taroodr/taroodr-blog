@@ -3,8 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeart } from '@fortawesome/free-solid-svg-icons'
 // https://github.com/FortAwesome/react-fontawesome
 
-const About = () => (
-  <Layout>
+const About = (props) => (
+  <Layout pathname={props.pathname}>
     <div className="container has-text-centered">
       <div className="section">
         <div><img className="profile" src="/static/images/profile.jpg" /></div>
@@ -26,14 +26,14 @@ const About = () => (
                       </li>
                       <li>
                         <span className="fav-skill">
-                          <span className="fav-skill__icon"><FontAwesomeIcon size="md" color="red" icon={faHeart} /></span>
+                          <span className="fav-skill__icon"><FontAwesomeIcon color="red" icon={faHeart} /></span>
                           javascript
                         </span>
                       </li>
                       <li>jQuery</li>
                       <li>
                         <span className="fav-skill">
-                          <span className="fav-skill__icon"><FontAwesomeIcon size="md" color="red" icon={faHeart} /></span>
+                          <span className="fav-skill__icon"><FontAwesomeIcon color="red" icon={faHeart} /></span>
                           vue.js
                         </span>
                       </li>
@@ -53,7 +53,7 @@ const About = () => (
                     <ul className="skill-list has-text-centered">
                       <li>
                         <span className="fav-skill">
-                          <span className="fav-skill__icon"><FontAwesomeIcon size="md" color="red" icon={faHeart} /></span>
+                          <span className="fav-skill__icon"><FontAwesomeIcon color="red" icon={faHeart} /></span>
                           node.js
                         </span>
                       </li>
@@ -102,8 +102,8 @@ const About = () => (
         <h2 className="skill-title title is-1">WORKS</h2>
         <div className="columns section">
           <a href="https://r-w-d.com/" className="card column">
-            <div class="card-image">
-              <figure class="image is-4by3">
+            <div className="card-image">
+              <figure className="image is-4by3">
                 <img src="/static/images/rwd.png" alt="Placeholder image" />
               </figure>
             </div>
@@ -119,8 +119,8 @@ const About = () => (
             </div>
           </a>
           <a href="https://easypay-dd04a.firebaseapp.com/" className="card column">
-            <div class="card-image">
-              <figure class="image is-4by3">
+            <div className="card-image">
+              <figure className="image is-4by3">
                 <img src="/static/images/cashica.png" alt="Placeholder image" />
               </figure>
             </div>
@@ -195,5 +195,13 @@ const About = () => (
     `}</style>
   </Layout>
 )
+
+About.getInitialProps = async function (context) {
+  console.log(context.pathname)
+  return {
+    pathname: context.pathname
+  }
+}
+
 
 export default About
