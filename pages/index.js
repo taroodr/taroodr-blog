@@ -70,7 +70,7 @@ const Index = (props) => {
 )}
 
 Index.getInitialProps = async function () {
-  const res = await fetch('https://api.taroodr.com/wp-json/wp/v2/posts')
+  const res = await fetch('//api.taroodr.com/wp-json/wp/v2/posts')
   const data = await res.json()
 
   return {
