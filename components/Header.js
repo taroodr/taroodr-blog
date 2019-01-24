@@ -25,10 +25,10 @@ export default class Header extends React.Component {
             <Link href="/about">
               <a className={this.props.pathname === '/about' ? 'nav__link nav__link--active' : 'nav__link'}>About me</a>
             </Link>
+            <a href="https://github.com/taroodr" className="nav__link" target="_blank">Github</a>
             <Link href="/notice">
               <a className={this.props.pathname === '/notice' ? 'nav__link nav__link--active' : 'nav__link'}>免責事項</a>
             </Link>
-            <a href="https://github.com/taroodr" className="nav__link" target="_blank">Github</a>
           </nav>
         </div>
         <style jsx>{`
@@ -64,6 +64,10 @@ export default class Header extends React.Component {
             animation-name: titleAnimation;
             animation-timing-function:ease;
             animation-duration: .5s;
+          }
+
+          .hero__description {
+            font-size: 0.8rem
           }
 
           h1 span{

@@ -37,6 +37,21 @@ const Index = (props) => {
           cursor: pointer;
         }
 
+        @media screen and (max-width: 768px) {
+          .post {
+            padding: 0rem;
+            margin-bottom: 4rem;
+          }
+
+          .columns {
+            padding-top: 1rem;
+          }
+
+          .column {
+            padding: 0;
+          }
+        }
+
         .post:hover {
           box-shadow:0px 0px 6px 3px #f0f0f0;
         }

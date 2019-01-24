@@ -15,9 +15,6 @@ const Notice = (props) => (
       </div>
     </div>
     <style jsx>{`
-      .content {
-        padding: 2rem 2rem;
-      }
     `}</style>
   </Layout>
 )

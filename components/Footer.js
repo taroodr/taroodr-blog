@@ -5,7 +5,7 @@ const Footer = () => (
     <div className="section">
       <div className="container">
         <nav className="footer-nav">
-          <ul className="columns is-centered">
+          <ul className="columns is-mobile is-centered">
             <li>
               <Link href="/about">
                 <a className="column">Home</a>
@@ -17,12 +17,12 @@ const Footer = () => (
               </Link>
             </li>
             <li>
-              <a href="https://github.com/taroodr" className="column" target="_blank">Github</a>
-            </li>
-            <li>
               <Link href="/">
                 <a className="column">免責事項</a>
               </Link>
+            </li>
+            <li>
+              <a href="https://github.com/taroodr" className="column" target="_blank">Github</a>
             </li>
           </ul>
         </nav>

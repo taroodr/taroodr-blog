@@ -14,6 +14,8 @@ const Layout = (props) => (
       <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
       <link rel="stylesheet" href="/static/css/bulma.min.css" />
       <link rel="stylesheet" type="text/css" href="/static/css/default.css" media="screen" />
+      <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet" />
+      <limk href="https://fonts.googleapis.com/css?family=Baloo+Paaji" rel="stylesheet" />
     </Head>
     <div style={layoutStyle}>
       <div>

@@ -9,10 +9,10 @@ const Post = (props) => (
       <div className="container">
         <div className="columns">
           <div className="column is-10 is-offset-1">
-            <div className="post">
+            <div className="content">
               <h1 className="title">{props.title.rendered}</h1>
               <p className="post__date has-text-right">{formatDate(props.date)}</p>
-              <Highlight innerHTML={true} className='markdown-body content'>
+              <Highlight innerHTML={true} className='markdown-body'>
                 {props.content.rendered}
               </Highlight>
             </div>
@@ -21,8 +21,10 @@ const Post = (props) => (
       </div>
     </div>
     <style jsx>{`
-      .post {
-        padding: 2rem 2rem;
+      @media screen and (max-width: 768px) {
+        .column {
+          padding: 0;
+        }
       }
       .post__date {
         font-size: .8rem;

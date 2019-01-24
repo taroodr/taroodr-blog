@@ -5,7 +5,6 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 */
 @import "https://fonts.googleapis.com/css?family=Baloo+Paaji";
 
-
 .hljs {
   display: block;
   overflow-x: auto;
@@ -129,6 +128,56 @@ a::after {
 }
 a:hover::after {
   width: 100%;
+}
+
+.content {
+  padding: 1rem 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    padding: 0;
+  }
+}
+
+.content p {
+  line-height: 1.8;
+  font-size: 1.1rem
+}
+
+.content h1,.content h2,.content h3,.content h4,.content h5,.content h6 {
+    margin: 1.3rem 0 .8rem;
+    line-height: 1.5
+}
+
+.content h1 {
+    font-size: 1.6rem
+}
+
+.content h1,.content h2 {
+    padding: 0 0 8px;
+    border-bottom: 1px solid #ccc
+}
+
+.content h2 {
+    font-size: 1.5rem
+}
+
+.content h3 {
+    font-size: 1.4rem;
+    margin: 25px 0 15px
+}
+
+.content h4 {
+    font-size: 1.3rem
+}
+
+.content h5 {
+    font-size: 1.1rem
+}
+
+.content h6 {
+    font-size: 1.0rem
 }
 
 @media screen and (min-width: 1472px) {
