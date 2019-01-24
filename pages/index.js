@@ -5,7 +5,7 @@ import formatDate from "../util/parseDate.js"
 
 const Index = (props) => {
   return (
-    <Layout title="たろろぐ" pathname={props.pathname}>
+    <Layout title="taroo log" pathname={props.pathname}>
       <div className="section">
         <div className="container">
           <div className="columns">
@@ -73,7 +73,6 @@ const Index = (props) => {
 Index.getInitialProps = async function (context) {
   const res = await fetch('//api.taroodr.com/wp-json/wp/v2/posts')
   const data = await res.json()
-  console.log(context)
   return {
     posts: data,
     pathname: context.pathname

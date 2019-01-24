@@ -4,7 +4,7 @@ import fetch from 'isomorphic-unfetch'
 import formatDate from "../util/parseDate.js"
 
 const Post = (props) => (
-  <Layout title={props.title.rendered + ' | たろろぐ'}>
+  <Layout title={props.title.rendered + ' | taroo log'}>
     <div className="section">
       <div className="container">
         <div className="columns">

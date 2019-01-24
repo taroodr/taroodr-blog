@@ -1,7 +1,7 @@
 import Layout from '../components/MyLayout.js'
 
 const Notice = (props) => (
-  <Layout pathname={props.pathname}>
+  <Layout pathname={props.pathname} title='taroo log'>
     <div className="container">
       <div className="section">
         <div className="columns">

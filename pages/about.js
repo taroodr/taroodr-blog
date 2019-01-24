@@ -4,7 +4,7 @@ import { faHeart } from '@fortawesome/free-solid-svg-icons'
 // https://github.com/FortAwesome/react-fontawesome
 
 const About = (props) => (
-  <Layout pathname={props.pathname}>
+  <Layout pathname={props.pathname} title='taroo log'>
     <div className="container has-text-centered">
       <div className="section">
         <div><img className="profile" src="/static/images/profile.jpg" /></div>
