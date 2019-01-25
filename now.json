@@ -5,5 +5,7 @@
       "src": "package.json",
       "use": "@now/next"
     }
-  ]
+  ],
+  "name": "taroodr",
+  "alias": "taroodr.com"
 }

@@ -20,7 +20,8 @@
     "build": "next build",
     "static": "next export",
     "start": "next start -p 8000",
-    "deploy": "now"
+    "deploy:staging": "now",
+    "deploy:prod": "now alias"
   },
   "author": "",
   "license": "ISC"
