@@ -1,4 +1,6 @@
 import Head from 'next/head'
+import Router from "next/router";
+import withGA from "next-ga";
 import Header from './Header'
 import Footer from './Footer'
 
@@ -27,6 +29,4 @@ const Layout = (props) => (
   </div>
 )
 
-export default Layout
-
-  
+export default withGA("UA-115969381-3", Router)(Layout);
