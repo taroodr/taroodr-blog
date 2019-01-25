@@ -132,7 +132,7 @@ const About = (props) => (
                   <div className="media-content">
                     <section>
                       <h3 className="title is-4 has-text-centered">Cashica</h3>
-                      <p className="has-text-centered">貸し借りを可視化するサービス<br />フロントエンドはnuxt.js<br />バックエンドはfirebase</p>
+                      <p className="has-text-centered">貸し借りを可視化するサービス<br />フロントエンドはnuxt.js<br />バックエンドはfirebaseを使用</p>
                     </section>
                   </div>
                 </div>
