@@ -20,7 +20,7 @@
     "dev": "node server.js",
     "build": "next build",
     "static": "next export",
-    "start": "next start -p 8000",
+    "start": "next start",
     "deploy:staging": "now",
     "deploy:prod": "now alias"
   },

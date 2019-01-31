@@ -37,7 +37,7 @@ const Post = (props) => (
 
 Post.getInitialProps = async function (context) {
   const { id } = context.query
-  const res = await fetch(`https://api.taroodr.com/wp-json/wp/v2/posts/${id}`)
+  const res = await fetch(`//api.taroodr.com/wp-json/wp/v2/posts/${id}`)
   const data = await res.json()
 
   return data

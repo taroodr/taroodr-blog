@@ -6,6 +6,16 @@
       "use": "@now/next"
     }
   ],
+  "routes": [
+    {
+      "src": "/p/(?<id>.+)",
+      "dest": "/post?id=$id"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
+  ],
   "name": "taroodr",
   "alias": "taroodr.com"
 }
