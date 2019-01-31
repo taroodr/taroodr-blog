@@ -3,9 +3,17 @@ import Router from "next/router";
 import withGA from "next-ga";
 import Header from './Header'
 import Footer from './Footer'
+import NProgress from 'nprogress'
 
 const layoutStyle = {
 }
+
+Router.events.on('routeChangeStart', (url) => {
+  console.log(`Loading: ${url}`)
+  NProgress.start()
+})
+Router.events.on('routeChangeComplete', () => NProgress.done())
+Router.events.on('routeChangeError', () => NProgress.done())
 
 const Layout = (props) => (
   <div>
