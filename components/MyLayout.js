@@ -18,14 +18,19 @@ Router.events.on('routeChangeError', () => NProgress.done())
 const Layout = (props) => (
   <div>
     <Head>
-      <title>{props.title || 'taroo log'}</title>
+      <title>{props.title || 'Taroo Log || エンジニア×バンドマンのブログ'}</title>
       <meta charSet="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
+      <meta name="description" content="首都圏でエンジニアxバンドマンとして活動している「KOTARO NAKAMURA」のブログ" />
+      <meta name="og:site_name" content="Taroo Log || エンジニア×バンドマンのブログ" />
+      <meta name="og:type" content="webpage" />
+      <meta name="og:title" content="Taroo Log || エンジニア×バンドマンのブログ" />
+      <meta name="og:description" content="首都圏でエンジニアxバンドマンとして活動している「KOTARO NAKAMURA」のブログ" />
       <link rel="stylesheet" href="/static/css/bulma.min.css" />
       <link rel="stylesheet" type="text/css" href="/static/css/default.css" media="screen" />
       <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet" />
-      <limk href="https://fonts.googleapis.com/css?family=Baloo+Paaji" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css?family=Baloo+Paaji" rel="stylesheet" />
     </Head>
     <div style={layoutStyle}>
       <div>
