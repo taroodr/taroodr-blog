@@ -12,7 +12,7 @@ export default class Header extends React.Component {
         <div className="hero">
           <Link href="/">
             <h1 className="hero__title">
-              <span>taroo{this.props.userAgent}</span>
+              <span>taroo</span>
               <span>log</span>
             </h1>
           </Link>

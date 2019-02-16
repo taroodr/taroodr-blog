@@ -130,6 +130,10 @@ a:hover::after {
   width: 100%;
 }
 
+p {
+  word-wrap:break-word;
+}
+
 .content {
   padding: 1rem 2rem;
 }
