@@ -27,6 +27,7 @@ const Layout = (props) => (
       <meta name="og:type" content="webpage" />
       <meta name="og:title" content="Taroo Log || エンジニア×バンドマンのブログ" />
       <meta name="og:description" content="首都圏でエンジニアxバンドマンとして活動している「KOTARO NAKAMURA」のブログ" />
+      <link rel="icon" href="/static/favicon.ico" />
       <link rel="stylesheet" href="/static/css/bulma.min.css" />
       <link rel="stylesheet" type="text/css" href="/static/css/default.css" media="screen" />
       <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet" />
