@@ -23,7 +23,7 @@
     "static": "next export",
     "start": "next start",
     "deploy:staging": "now",
-    "deploy:prod": "now alias"
+    "deploy:prod": "now --target production -t ${ZEIT_TOKEN}"
   },
   "author": "",
   "license": "ISC"
