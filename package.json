@@ -7,9 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint --fix **/*.{ts,tsx}",
-    "type-check": "tsc --noEmit -p ./tsconfig.json #",
-    "deploy:staging": "now",
-    "deploy:prod": "now --target production -t ${ZEIT_TOKEN}"
+    "type-check": "tsc --noEmit -p ./tsconfig.json #"
   },
   "husky": {
     "hooks": {
