@@ -4,6 +4,7 @@ import { Layout, PostBody, PostTitle, ShareButtons } from "../../components";
 import { getPostBySlug, getAllPosts } from "../../lib/api";
 import Head from "next/head";
 import markdownToHtml from "../../lib/markdownToHtml";
+import createOgp from "../../lib/createOgp";
 
 export default function Post({ post, preview }: { post: any; preview: any }) {
   const router = useRouter();
@@ -20,6 +21,23 @@ export default function Post({ post, preview }: { post: any; preview: any }) {
             <Head>
               <title>{post.title} | taroodr.dev</title>
               <meta property="og:image" content={post.ogImage.url} />
+              <meta
+                property="og:image"
+                key="ogImage"
+                content={`https://taroodr.com/ogp/${post.slug}.png`}
+              />
+              <meta
+                name="twitter:card"
+                key="twitterCard"
+                content="summary_large_image"
+              />
+              <meta name="twitter:title" content={post.title} />
+              <meta name="twitter:description" content={post.excerpt} />
+              <meta
+                name="twitter:image"
+                key="twitterImage"
+                content={`https://taroodr.com/ogp/${post.slug}.png`}
+              />
             </Head>
             <PostTitle title={post.title} dateString={post.date} />
             <PostBody content={post.content} />
@@ -40,8 +58,11 @@ export async function getStaticProps({ params }: { params: any }) {
     "content",
     "ogImage",
     "coverImage",
+    "excerpt",
   ]);
   const content = await markdownToHtml(post.content || "");
+
+  await createOgp(post.title, params.slug);
 
   return {
     props: {
