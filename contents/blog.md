@@ -2,7 +2,7 @@
 title: "TypeScriptで型パズルを始めてみよう"
 excerpt: "TypeScript の高度な型システム学びたいけど、何からやればいいのか、たまに使うけど忘れるといった方におすすめのものを見つけました"
 coverImage: "/assets/blog/preview/cover.jpg"
-date: "2020-03-16T05:35:07.322Z"
+date: "2021-02-07T05:35:07.322Z"
 author:
   name: taroodr
   picture: "/assets/blog/authors/"
@@ -23,13 +23,13 @@ TypeScript の高度な型システム学びたいけど
 
 ## type-challenges
 
-https://github.com/type-challenges/type-challenges
+[type-challenges](https://github.com/type-challenges/type-challenges)
 
 > This project is aim to help you better understand how the type system works, writing your own utilities, or just having fun with the challenges.
 > このプロジェクトの目的は、型システムがどのように動作するかをよりよく理解したり、独自のユーティリティを書いたり、あるいはチャレンジを楽しんだりすることです。
 
 詳しくは type-challenges の README か下記の qiita をどうぞ
-https://qiita.com/ryo2132/items/925b96838dd8cca7cebd
+[https://qiita.com/ryo2132/items/925b96838dd8cca7cebd](https://qiita.com/ryo2132/items/925b96838dd8cca7cebd)
 
 ## 型パズルやってみよう
 
@@ -38,7 +38,7 @@ https://qiita.com/ryo2132/items/925b96838dd8cca7cebd
 
 雑に問題を訳すと皆さんご存知？の `Pick<T, K>` 型を自分で書いてみようになります
 
-https://github.com/type-challenges/type-challenges/blob/master/questions/4-easy-pick/README.md
+[https://github.com/type-challenges/type-challenges/blob/master/questions/4-easy-pick/README.md](https://github.com/type-challenges/type-challenges/blob/master/questions/4-easy-pick/README.md)
 
 ![](https://storage.googleapis.com/zenn-user-upload/3fb8jntt6oisxnzqyy3818k8dyja)
 
@@ -105,5 +105,5 @@ T が Todo 型、K が Todo 型の key の union type `'title' | 'completed' | '
 つまり、 `'title' | 'completed' | 'description'` 型の文字列 P に対して、型 `Todo['title' | 'completed' | 'description']` をもつプロパティ P が存在するオブジェクトの型です。
 
 参考
-https://qiita.com/ryo2132/items/925b96838dd8cca7cebd
-https://qiita.com/uhyo/items/e2fdef2d3236b9bfe74a#conditional-types
+[https://qiita.com/ryo2132/items/925b96838dd8cca7cebd](https://qiita.com/ryo2132/items/925b96838dd8cca7cebd)
+[https://qiita.com/uhyo/items/e2fdef2d3236b9bfe74a#conditional-types](https://qiita.com/uhyo/items/e2fdef2d3236b9bfe74a#conditional-types)
