@@ -19,7 +19,24 @@ export default function Post({ post, preview }: { post: any; preview: any }) {
           <article className="mb-32">
             <Head>
               <title>{post.title} | taroodr.dev</title>
-              <meta property="og:image" content={post.ogImage.url} />
+              {/* <meta property="og:image" content={post.ogImage.url} /> */}
+              <meta
+                property="og:image"
+                key="ogImage"
+                content={`https://taroodr.com/ogp.png`}
+              />
+              <meta
+                name="twitter:image"
+                key="twitterImage"
+                content={`https://taroodr.com/ogp.png`}
+              />
+              <meta
+                name="twitter:card"
+                key="twitterCard"
+                content="summary_large_image"
+              />
+              <meta name="twitter:title" content={post.title} />
+              <meta name="twitter:description" content={post.excerpt} />
             </Head>
             <PostTitle title={post.title} dateString={post.date} />
             <PostBody content={post.content} />
@@ -40,6 +57,7 @@ export async function getStaticProps({ params }: { params: any }) {
     "content",
     "ogImage",
     "coverImage",
+    "excerpt",
   ]);
   const content = await markdownToHtml(post.content || "");
 

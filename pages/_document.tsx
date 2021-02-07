@@ -31,7 +31,7 @@ class MyDocument extends Document {
           <meta name="og:type" content="webpage" />
           <meta name="og:title" content="taroodr.dev" />
           <meta name="og:description" content="taroodrのブログ" />
-          <link rel="icon" href="/static/favicon.ico" />
+          <link rel="icon" href="/public/favicon.ico" />
           {process.env.NODE_ENV === "production" && (
             <>
               <script
