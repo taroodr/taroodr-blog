@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import ErrorPage from "next/error";
-import { Layout, PostBody, PostTitle } from "../../components";
+import { Layout, PostBody, PostTitle, ShareButtons } from "../../components";
 import { getPostBySlug, getAllPosts } from "../../lib/api";
 import Head from "next/head";
 import markdownToHtml from "../../lib/markdownToHtml";
@@ -23,6 +23,7 @@ export default function Post({ post, preview }: { post: any; preview: any }) {
             </Head>
             <PostTitle title={post.title} dateString={post.date} />
             <PostBody content={post.content} />
+            <ShareButtons />
           </article>
         </>
       )}
