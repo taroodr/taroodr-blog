@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && ts-node utils/generateSiteMap.ts",
+    "build": "next build && ts-node --project ./node.tsconfig.json lib/generateSiteMap.ts",
     "start": "next start",
     "lint": "eslint --fix **/*.{ts,tsx}",
     "type-check": "tsc --noEmit -p ./tsconfig.json #"
