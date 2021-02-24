@@ -2,7 +2,7 @@
 title: "JestとReact Testing LibraryでTable Driven Testsを書く"
 excerpt: "GolangでTestを書くときによく使われるTable Driven TestsをReactのテストに使うとわかりやすくなると思い検証してみた"
 coverImage: "/assets/blog/preview/cover.jpg"
-date: "2021-02-25T05:35:07.322Z"
+date: "2021-02-25T12:35:07.322Z"
 author:
   name: taroodr
   picture: "/assets/blog/authors/"
