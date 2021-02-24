@@ -7,7 +7,8 @@
     "build": "next build && ts-node --project ./node.tsconfig.json lib/generateSiteMap.ts",
     "start": "next start",
     "lint": "eslint --fix **/*.{ts,tsx}",
-    "type-check": "tsc --noEmit -p ./tsconfig.json #"
+    "type-check": "tsc --noEmit -p ./tsconfig.json #",
+    "test": "jest"
   },
   "husky": {
     "hooks": {
@@ -25,6 +26,7 @@
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.4.0",
+    "@types/react-dom": "^17.0.1",
     "autoprefixer": "^10.2.4",
     "date-fns": "^2.17.0",
     "gray-matter": "^4.0.2",
@@ -39,7 +41,10 @@
     "tailwindcss": "^2.0.2"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.5",
     "@types/gtag.js": "^0.0.4",
+    "@types/jest": "^26.0.20",
     "@types/node": "^14.14.25",
     "@types/prismjs": "^1.16.2",
     "@types/react": "^17.0.1",
@@ -53,8 +58,10 @@
     "eslint-plugin-react": "^7.22.0",
     "eslint-plugin-react-hooks": "^4.2.0",
     "husky": "^4.3.8",
+    "jest": "^26.6.3",
     "lint-staged": "^10.5.4",
     "prettier": "^2.2.1",
+    "ts-jest": "^26.5.2",
     "ts-node": "^9.1.1",
     "typescript": "^4.1.3"
   }

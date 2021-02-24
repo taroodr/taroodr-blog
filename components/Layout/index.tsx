@@ -5,7 +5,7 @@ export const Layout: React.FC = ({ children }) => {
     <div className="container max-w-screen-md mx-auto py-4 px-4 md:px-0">
       <header className="">
         <div className="flex justify-between items-center">
-          <h1 className="font-bold text-lg text-blue-600">
+          <h1 className="font-bold text-lg text-green-400">
             <Link href="/">
               <a className="inline-flex items-center">
                 <img
